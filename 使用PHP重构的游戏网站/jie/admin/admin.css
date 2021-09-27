@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.content {
+	width: 1600px;
+	margin: 0px auto;
+	height: 1000px;
+	position: relative;
+}
+.contentright {
+	width: 259px;
+	height: 900px;
+	background-color: #42668c;
+	float: left;
+}
+#contentright {
+	text-align: center;
+	position: relative;
+	top: 50px;
+	width: 100%;
+}
+#img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 8px solid #ffffff;
+}
+#contentright p {
+	font-weight: 700;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+#contentright span a {
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
+	font-size: 25px;
+	text-shadow: 0 0 4px white,  0 -5px 4px #ff3,  2px -10px 6px #fd3,  -2px -15px 11px #f80,  2px -25px 18px #f20;
+	cursor: pointer;
+}
+#add:hover, #del:hover, #upa:hover, #adminlogin:hover, #comment:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+#img1 {
+	text-align: center;
+	margin-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+#img2:hover, #img3:hover, #img4:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+.contentleft {
+	width: 1225px;
+	height: 900px;
+	float: left;
+	border: solid 2px #999999;
+}
+#contentleft {
+	position: relative;
+	text-align: center;
+	left: -200px;
+	top: 50px;
+}
+#contentleft span {
+	font-size: 25px;
+}
+#pos {
+	position: relative;
+	left: -260px;
+	top: 10px;
+}
+#contentleft span a {
+	color: #42668c;
+	text-decoration: none;
+}
+#contentleft span a:hover {
+	font-weight: 700;
+	opacity: 0.7;
+}
+#centertext {
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	left: 400px;
+	top: 200px;
+}
+#centertext p {
+	font-size: 18px;
+}
+#video {
+	height: 400px;
+	width: 600px;
+	position: relative;
+	top: -10px;
+}
+#vido:hover {
+	opacity: 0.2;
+}
+#bjt2 {
+	position: relative;
+	left: 200px;
+	height: 200px;
+	width: 1220px;
+	top: -50px;
+	border: 5px solid #808080;
+}
+#bjt2:hover {
+	opacity: 0.5;
+	background-color: black;
+}
+#contentleft span {
+	position: relative;
+	left: -50px;
+	top: -50px;
+}
+#formpos {
+	position: relative;
+	top: -20px;
+}
+#formpos input {
+	margin-top: 40px;
+	padding: 0 4px;
+	width: 240px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+}
+#image33 {
+	width: 240px;
+	height: 64px;
+}
+.sqlcontent {
+	margin: 0 auto;
+	width: 900px;
+	height: 80px;
+	background-color: #F4F4F4;
+	border-radius: 5px;
+	margin-top: 20px;
+	position: relative;
+	top: 20px;
+}
+.sqlcontent:hover {
+	box-shadow: 0px 0px 10px #666;
+}
+.sqlcontent img {
+	position: relative;
+	left: -346px;
+	border-radius: 5px;
+}
+h2 {
+	position: relative;
+	left: -300px;
+	top: -50px;
+	font-size: 30px;
+	color: #000;
+	font-weight: 800;
+}
+#dazebutton {
+	width: 58px;
+	height: 32px;
+	background-color: #6ec449;
+	border-radius: 8px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-top: 7px;
+	position: relative;
+	left: 700px;
+	top: -210px;
+	cursor: pointer;
+}
+#deletebutton {
+	width: 58px;
+	height: 32px;
+	background-color: #6ec449;
+	border-radius: 8px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-top: 7px;
+	position: relative;
+	left: 800px;
+	top: -249px;
+}
+#deletebutton:hover, #dazebutton:hover {
+	box-shadow: 0px 0px 5px #63C;
+}
+#deletebutton a {
+	color: white;
+}

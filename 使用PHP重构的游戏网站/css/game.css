@@ -1,0 +1,16 @@
+/* 对原样式的追加内容 */
+
+.hotsale_add{
+    width: 70%;
+    height:50px;
+    border-radius:10px;
+    background-color: beige;
+    line-height: 50px;
+    padding-left: 2%;
+}
+
+.hot_detail_add{
+    position: fixed;
+    top: 30%;
+    right: 5%;
+}

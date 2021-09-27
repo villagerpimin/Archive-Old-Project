@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+	margin:0 auto;
+}
+
+/*这是表头*/
+.head{
+   height: 100px;
+   background-color: white;
+}
+
+a{ text-decoration:none}
+
+.head img{
+	position:relative;
+	left:13%;
+	top:15%;
+	cursor:pointer;
+}
+#fullcontent{
+	width:100%;
+	height:100%;
+	}
+/*这是中间图片*/
+.middle{
+	border-top:1px solid #F00;
+}
+.middle img{
+	width:100%;
+	height:100%;
+}
+/*这是表单*/
+.middleform{
+	width:400px;
+	height:540px;
+	background-color:white;
+	z-index:2;
+	position:absolute;
+	top:155px;
+	left:880px;
+	border-radius:15px 80px 15px 15px;
+	text-align:center;
+	float:left;
+	overflow:hidden;
+	}
+/*这是二维码的图片*/
+
+/*表单文字*/
+.middleform span{
+	 position:relative;
+	 left:-30px;
+	 font-size:17px;
+	 margin-left:15px;
+	 font-weight:700;
+	 }
+.middleform a{ color:#000;}
+/*表单短信*/
+.formtext{ padding-top:20px; cursor:pointer;}
+/*输入控件*/
+#fieldusername{
+	width:300px;
+	height:49px;
+	border-bottom:1px solid #CCC;
+	margin-left:50px;
+	margin-top:20px;
+}
+.iconfont{
+	position:relative;
+	font-size:25px;
+	color:#F00;
+	left:-15px;
+	}
+input{
+	position:relative;
+	left:10px; 
+    border:none; 
+    height:26px; 
+    width:260px;
+	cursor:text;
+	font-size:17px;
+	outline:none;
+}
+input::placeholder{
+  color:#C30;
+  opacity:0.4;
+}
+/*验证码*/
+#yzm{
+	width:130px;
+	height:30px;
+	border:1px solid #CCC;
+	position:relative;
+	top:-25px;
+	left:110px;
+}
+#yzm img{
+	cursor:pointer;
+	}
+#yzm a{
+	position:relative;
+	left:100px;
+	top:-38px;
+	opacity:0.7;
+	cursor:pointer
+	}
+
+/*单选按钮*/
+.ckbname{
+	height:20px;
+	width:20px;
+	position:relative;
+	left:-88px;
+	top:10px;
+	}
+#radio span{ font-size:15px; color:#CCC; font-weight:300; position:relative; left:-95px; top:5px;}
+/*这是忘记密码*/
+#forgetpsw{ position:relative; top:-32.5px; left:120px; cursor:pointer;}
+
+#forgetpsw:hover{ color:#999;}
+/*登录和注册*/
+#login,#register{
+	width:300px;
+	height:49px;
+	border:1px solid #F00;
+	background-color:#FFF;
+	border-radius:50px;
+	position:relative;
+	font-size:23px;
+	color:#F60;
+	cursor:pointer
+}
+#register{
+	margin-top:20px;
+	}
+#login:hover,#register:hover{
+	background-color:#F60;
+	color:#FFF;
+	}
+/*优惠券*/
+#lab{
+	color:#FFF;
+	background-color:#F93;
+	width:80px;
+	height:26px;
+	border-radius:50px;
+	position:absolute;
+	left:280px;
+	top:436px;
+	z-index:5;
+}
+/*这是底部*/
+#bottom{
+	position:relative;
+	color:#FFF;
+	top:-55px;
+	opacity:0.4;
+	text-align:center;
+	}
+
+
+
