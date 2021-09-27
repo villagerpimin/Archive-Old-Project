@@ -1,0 +1,16 @@
+create datebase ffcar;
+use ffcar;
+
+用户管理
+create table tb_ffcar(
+id int primary key auto_increment,
+name varchar(20),
+pwd varchar(20),
+vip int default 1,
+ss int default 0,
+mm int default 0,
+bb int default 0
+);
+
+表中的默认数据，默认用户为vip3
+insert into tb_ffcar(name,pwd,vip) values('1930634','123',3);
