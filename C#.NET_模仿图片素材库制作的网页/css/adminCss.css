@@ -1,0 +1,58 @@
+﻿body {
+    position:relative;
+}
+
+/*返回顶部的小箭头*/
+.gotop{
+    width:40px;
+    height:40px;
+    background-color:white;
+    border-radius:30px;
+    border:1px solid black;
+    position:fixed;
+    bottom:30px;
+    right:-20px;
+    transition:.8s;
+    line-height:35px;
+    text-align:center;
+    font-size:25px;
+}
+.gotop:hover{
+    transition:.8s;
+    right:5px;
+    cursor:pointer;
+}
+
+/*页脚*/
+#footer{
+    width:200px;
+    bottom:30px;
+    margin:auto;
+    text-align:center;
+    color:#898989;
+    margin-top:120px;
+}
+
+/* 浏览图片的布局 */
+#showlist{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:flex-start; /*左对齐*/
+}
+img{
+    width:370px;
+    height:230px;
+    overflow:hidden;
+    padding-right:25px;
+    padding-bottom:15px;
+}
+img:hover{ /*引用自定义动画库的动画*/
+    animation:jello 1s;
+    cursor:pointer;
+}
+
+/* 添加图片的布局 */
+#newpic{
+    font-size:16px;
+    color:#434343;
+}

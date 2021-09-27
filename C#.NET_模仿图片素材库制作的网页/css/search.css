@@ -1,0 +1,14 @@
+﻿#shownav{
+    height: 60px;
+}
+/* 图片类型选择 */
+#piclx{
+    cursor: pointer;
+}
+/*图片展示*/
+#thumb{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    flex-flow:wrap;
+}

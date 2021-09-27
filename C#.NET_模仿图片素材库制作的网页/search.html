@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixabay</title>
+    <link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script src="js/search.js"></script>
+    <link rel="stylesheet" href="css/search.css" />
+</head>
+<body>
+    <!--导航条-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!--logo-->
+            <div class="navbar-header">
+                <img src="images/logo.png" class="navbar-brand" />
+                <!--折叠菜单-->
+                <button class="collapsed navbar-toggle" data-toggle="collapse" data-target="#list">
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                </button>
+            </div>
+            <!--导航列表-->
+            <div id="list" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.aspx">首页</a></li>
+                    <li><a href="chahua.aspx">插画</a></li>
+                    <li><a href="shiliang.aspx">矢量图</a></li>
+                </ul>
+                <!-- 搜索框 -->
+                <form action="" id="ins" method="GET" class="navbar-form navbar-left">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="搜索">
+                        <span id="insub" class="glyphicon glyphicon-search input-group-addon"
+                            style="cursor: pointer;"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 内容展示(通过js输出) -->
+    <div id="show" class="container">
+        <div class="row" id="shownav">
+            <!-- 图片类型 -->
+            <div class="col-6">
+                <ul class="nav nav-tabs">
+                    <li class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            照片 <i class="caret"></i>
+                        </button>
+                        <ul class="dropdown-menu" id="piclx">
+                            <li><a onclick="gohref('pic')">照片</a></li>
+                            <li><a onclick="gohref('shiliang')">矢量图</a></li>
+                            <li><a onclick="gohref('chahua')">插画</a></li>
+                        </ul>
+                    </li>
+
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+                    <!-- 图片方向 -->
+                    <li class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            图片方向 <i class="caret"></i>
+                        </button>
+                        <ul class="dropdown-menu" id="piclx">
+                            <li><a onclick="fangxiang('horizontal')">水平</a></li>
+                            <li><a onclick="fangxiang('vertical')">垂直</a></li>
+                            <li><a onclick="fangxiang('all')">默认</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 页数跳转 -->
+                    <li class="navbar-right navbar-form hidden-xs">
+                        <div class="input-group">
+                            <input type="number" class="form-control" 
+                                name="pager" id="pager" style="width: 80px;">
+                            <span class="input-group-addon">
+                                 / 
+                                <i id="pgs"></i>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" style="height: 50px;">
+            <span class="alert alert-success" id="num"></span>
+        </div>
+        <div class="row" id="thumb">
+            <!-- 缩略图 -->
+
+
+        </div>
+
+    </div>
+</body>
+</html>

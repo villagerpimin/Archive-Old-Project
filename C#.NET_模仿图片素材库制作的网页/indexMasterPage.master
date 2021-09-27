@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="indexMasterPage.master.cs" Inherits="indexMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Pixabay</title>
+    <!--导入动画库-->
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <!--导入主页样式表-->
+    <link rel="stylesheet" href="css/indexStyle.css" />
+    <!--导入js文件-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/indexJs.js"></script>
+
+    <!--预留位置-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!--页头-->
+        <div id="header">
+            <!--logo-->
+            <div class="header_left">
+                <img src="images/logo.png" style="padding-top:20px;" width="100" height="35"/>
+            </div>
+            <!--导航-->
+            <nav><ul id="nav">
+                    <li>
+                        <asp:Hyperlink ID="picture" runat="server" NavigateUrl="index.aspx">照片</asp:Hyperlink></li>
+                    <li>
+                        <asp:Hyperlink ID="chahua" runat="server" NavigateUrl="chahua.aspx">插画</asp:Hyperlink></li>
+                    <li>
+                        <asp:Hyperlink ID="shiliang" runat="server" NavigateUrl="shiliang.aspx">矢量</asp:Hyperlink></li>
+                    <li>
+                        <asp:Hyperlink ID="video" runat="server" NavigateUrl="#">视频</asp:Hyperlink></li>
+                    <li>
+                        <asp:Hyperlink ID="music" runat="server" NavigateUrl="#">音乐</asp:Hyperlink></li>
+             </ul></nav>
+            <!--登录-->
+            <div class="header_right">
+                <!--未登录时显示-->
+                <ul id="notSess" runat="server" visible="true">
+                    <li onclick="openUserMain()"><asp:HyperLink ID="login" runat="server" NavigateUrl="#">登录</asp:HyperLink></li>
+                    <li>|</li>
+                    <li onclick="openUserMain()"><asp:HyperLink ID="register" runat="server" NavigateUrl="#" onclick="openUserMain()">注册</asp:HyperLink></li>
+                </ul>
+                <!--登录时显示-->
+                <ul id="hasSess" runat="server" visible="false">
+                    <li>
+                        <asp:HyperLink ID="showLoginUser" runat="server"></asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">退出</asp:LinkButton>
+                    </li>
+                </ul>
+
+                <!--点击登录/注册时显示-->
+                <div id="usermain" runat="server">
+                    <div id="close">×</div>
+                    <div class="s">
+                        账号：<asp:TextBox ID="username" runat="server"></asp:TextBox>
+                        <br /><br />
+                        密码：<asp:TextBox ID="userpwd" runat="server" TextMode="Password"></asp:TextBox>
+                        <br />
+                        <div style="margin-bottom:50px;"></div>
+                        <div id="sub">
+                            <asp:LinkButton ID="userlog" runat="server" OnClick="userlog_Click">登录</asp:LinkButton>
+                            <asp:LinkButton ID="userreg" runat="server" OnClick="userreg_Click">注册</asp:LinkButton>
+                        </div>
+                    </div>
+                </div>
+
+                <!--上传的点击跳转在js页中-->
+                <div id="updata">上传</div>
+                <!--菜单项-->
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" CssClass="ts">
+                    <DynamicMenuItemStyle CssClass="tsItem" ForeColor="White"/>
+                    <DynamicHoverStyle ForeColor="#898989" />
+                    <DynamicMenuStyle VerticalPadding="30px" />
+                    <Items>
+                        <asp:MenuItem Text="探索" Value="探索">
+                            <asp:MenuItem NavigateUrl="https://villagerpimin.github.io/" Target="_blank" Text="博客" Value="博客"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="https://pixabay.com/zh/service/faq/" Target="_blank" Text="常见问题" Value="常见问题"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="https://pixabay.com/zh/service/about/api/" Target="_blank" Text="API" ToolTip="部分页面调用了网站提供的api" Value="API"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+
+        <!--搜索/欢迎-->
+        <div id="cov">
+            <!--背景图的显示判断在js-->
+            <div id="bg"></div>
+            <!--为背景图添加遮罩-->
+            <div class="mask"></div>
+            <!--上方内容-->
+            <div id="top">
+                <h1>
+                   <asp:ContentPlaceHolder ID="wel1" runat="server"></asp:ContentPlaceHolder>
+                 </h1>
+                <h2>
+                   <asp:ContentPlaceHolder ID="wel2" runat="server"></asp:ContentPlaceHolder>
+                </h2>
+            </div>
+            <div id="search">
+                <asp:LinkButton ID="searpic" runat="server" CssClass="searpic" OnClick="searpic_Click" ToolTip="搜索"></asp:LinkButton>
+                <!--搜索框的提示语在js-->
+                <asp:TextBox ID="inptext" runat="server" AutoPostBack="true" CssClass="seastyle"></asp:TextBox>
+                <!--下拉列表-->
+                <asp:DropDownList ID="leixing" runat="server" CssClass="lxstyle" AutoPostBack="True">
+                    <asp:ListItem Value="pic">照片</asp:ListItem>
+                    <asp:ListItem Value="shiliang">矢量</asp:ListItem>
+                    <asp:ListItem Value="chahua">插画</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            <!--热门搜索-->
+            <div id="hotsearch">
+                <!--预留位置，将调用数据库查询最高搜索量的关键字，默认展示前8项(top 8)-->
+                <!--热门搜索：风景，科技，母亲节，城市，美女，天空，花，动漫-->
+                <asp:ContentPlaceHolder ID="hots" runat="server">
+
+                </asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+
+        <!--内容区域(图片预览)-->
+        <div id="content">
+
+            <div class="showdb">
+                <!--预留位置，将使用数据库读取图片路径-->
+                <asp:ContentPlaceHolder ID="showdata" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+
+        <!--更多图片/注册-->
+        <div id="more">
+            <asp:ContentPlaceHolder ID="moad" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <!--页脚-->
+        <div id="footer">
+            1930634 朱腾飞 19软6
+        </div>
+
+        <!--返回顶部的小箭头-->
+        <div id="totop" class="gotop" title="返回顶部">⬆</div>
+    </div>
+    </form>
+</body>
+</html>
