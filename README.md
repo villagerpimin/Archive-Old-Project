@@ -8,7 +8,7 @@
 
 * 使用ASP.NET重写的图片素材网站
 
-> 网页模板以及内容均来自[pixabay.com](pixabay.com)
+> 网页模板以及内容均来自[pixabay.com](https://pixabay.com/zh/)
 
 * 使用原生js制作的动漫资讯网站
 
@@ -17,3 +17,7 @@
 * 使用PHP制作的学生选课系统
 
 > 模拟了学生选课系统的操作，界面采用bootstrap制作（包含教师管理系统）。
+
+* 使用PHP重做的游戏商城
+
+> 模仿了凤凰游戏商城的界面重做的页面，图片素材等均来自[原网站](https://www.fhyx.com/)
