@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动漫站</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/index_tool.css" rel="stylesheet">
+</head>
+<body>
+    <img id="skin" src="./images/skin1.png" title="切换夜间">
+    <img id="user" src="./images/user.png" title="用户登录">
+    <div id="cover">
+        <div id="search">
+            
+            <form id="sub">
+                <input type="text" name="q" id="scan">
+                <span id="send"></span>
+            </form>
+        </div>
+        <div id="title">动漫站</div>
+    </div>
+    <div id="nav">
+        <ul id="list">
+            <li>主页</li>
+            <li>经典老番</li>
+            <li>剧场动画</li>
+            <li>剧集</li>
+            <li>电影</li>
+        </ul>
+    </div>
+    <div id="hotAnime">
+        <div id="banner">
+            <div id="previous">&lt;</div> <!-- &lt;用于显示"<"号 -->
+            <div id="next">></div>
+            <div id="subscript">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="tips">演示文字</div>
+        </div>
+        <div id="dm">
+            <div id="hot1" class="demo">
+                <span class="hotspan">异世界少女召唤术</span>
+            </div>
+            <div id="into" class="demo">
+                <span class="intoTop">状态：全12话</span>
+            </div>
+
+            <div id="hot2" class="demo">
+                <span class="hotspan" style="top: 65%;">关于我转生变成史莱姆这档事</span>
+            </div>
+            <div id="into" class="demo">
+                <span class="intoTop">状态：全30话</span>
+            </div>
+
+            <div id="hot3" class="demo">
+                <span class="hotspan" style="top: 65%;">DARLING in the FRANXX</span>
+            </div>
+            <div id="into" class="demo">
+                <span class="intoTop">状态：全24话</span>
+            </div>
+
+            <div id="hot4" class="demo">
+                <span class="hotspan">妖精的尾巴Ⅲ</span>
+            </div>
+            <div id="into" class="demo">
+                <span class="intoTop">状态：全51话</span>
+            </div>
+
+            <div id="hot5" class="demo">
+                <span class="hotspan">鬼灭之刃</span>
+            </div>
+            <div id="into" class="demo">
+                <span class="intoTop">状态：全24话</span>
+            </div>
+
+            <div id="hot6" class="demo">
+                <span class="hotspan">全员恶玉</span>
+            </div>
+            <div id="into" class="demo">
+                <span class="intoTop">状态：连载至11话</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="post"> <!-- 公告栏 -->
+        <span id="mc">公告栏：</span>
+        <ul id="detail">
+            <li>暂时还没想好写点啥</li>
+            <li>随便放点东西先吧</li>
+            <li>欸嘿</li>
+            <li>暂时还没想好写点啥</li>
+            <!-- 其实很多效果可以css实现，但毕竟是js作业嘛~（划掉） -->
+        </ul>
+        <ul id="copy"></ul>
+    </div>
+
+    <div id="seekFanju"><!-- 追番时间表 -->
+        <h1>📅 新番时间表</h1>
+        <ul id="rili">
+            <li style="color: skyblue;">星期一</li>
+            <li>星期二</li>
+            <li>星期三</li>
+            <li>星期四</li>
+            <li>星期五</li>
+            <li>星期六</li>
+            <li>星期天</li>
+        </ul>
+        <div id="ranking" title="这个没有参考性~">
+            <h2>排行榜</h2>
+            <ul id="ls">
+                <li style="background-color: palevioletred;">1</li><span>狼与香辛料</span><br><br>
+                <li style="background-color: palevioletred;">2</li><span>冰菓</span><br><br>
+                <li style="background-color: palevioletred;">3</li><span>鬼灭之刃</span><br><br>
+                <li>4</li><span>暗杀教室</span><br><br>
+                <li>5</li><span>寄生兽 生命的准则</span><br><br>
+                <li>6</li><span>东京食尸鬼</span><br><br>
+                <li>7</li><span>农林</span><br><br>
+                <li>8</li><span>JOJO的奇妙冒险</span><br><br>
+                <li>9</li><span>一拳超人</span><br><br>
+                <li>10</li><span>碧蓝之海</span><br><br>
+            </ul>
+        </div>
+        <div id="co1">
+            <ul id="monday">
+                <li class="item">
+                    满溢的水果挞
+                    <span>更新至  09话</span>
+                </li>
+                <li class="item" title="最终章">
+                    进击的巨人 第四季
+                    <span style="top: 80%;">更新至  01话</span>
+                </li>
+                <li class="item">
+                    黄金神威
+                    <span>更新至10  话</span>
+                </li>
+                <li class="item">
+                    忍者Collection
+                    <span>更新至  13话</span>
+                </li>
+            </ul>
+        </div>
+
+        <div id="co2">
+            <ul id="tuesday">
+                <li class="item" title="我老婆真可爱">
+                    One Room
+                    <span>更新至  10话</span>
+                </li>
+                <li class="item" style="background-position: 30% 0;">
+                    在魔王城说晚安
+                    <span>更新至  10话</span>
+                </li>
+                <li class="item">
+                    阿松
+                    <span style="top: 85%;">更新至  09话</span>
+                </li>
+            </ul>
+        </div>
+
+        <div id="co3">
+            <ul id="wednesday">
+                <li class="item" style="background-size: 105% 100%;">
+                    熊熊勇闯异世界
+                    <span style="top: 85%;">更新至  10话</span>
+                </li>
+            </ul>
+        </div>
+        <div id="co4">
+            <ul id="thursday">
+                <li class="item" title="全 员 恶 人" style="background-position: 25% 0;">
+                    全员恶玉
+                    <span>更新至  11话</span>
+                </li>
+                <li class="item" style="background-size: 100% 100%;">
+                    强袭魔女 通往柏林之路
+                    <span style="top: 80%;">更新至  10话</span>
+                </li>
+            </ul>
+        </div>
+        <div id="co5">
+            <ul id="firday">
+                <li class="item" style="background-position: 38% 0;">
+                    魔女之旅
+                    <span>更新至  11话</span>
+                </li>
+                <li class="item">
+                    灵笼
+                    <span>更新至  12话</span>
+                </li>
+                <li class="item" title="老百合了">
+                    安达与岛村
+                    <span>更新至  10话</span>
+                </li>
+            </ul>
+        </div>
+        <div id="co6">
+            <ul id="saturday">
+                <li class="item" style="background-position: 50% 0;">
+                    炎炎消防队
+                    <span>更新至  24话</span>
+                </li>
+                <li class="item" style="background-size: 100% 100%;">
+                    在地下城寻求邂逅是否搞错了什么Ⅲ
+                    <span>更新至  11话</span>
+                </li>
+                <li class="item" title="我好酸">
+                    总之就是非常可爱
+                    <span>更新至  11话</span>
+                </li>
+                <li class="item" style="background-size: 110% 105%;">
+                    鬼灭之刃(中配)
+                    <span>更新至  22话</span>
+                </li>
+            </ul>
+        </div>
+        <div id="co7">
+            <ul id="sunday">
+                <li class="item" title="路过的假面骑士">
+                    假面骑士圣刃
+                    <span>更新至  13话</span>
+                </li>
+                <li class="item" title="快给我变！">
+                    铁路浪漫谭
+                    <span>更新至  10话</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="hottopics">
+        <h2>⭐ 热播专题</h2>
+        <hr>
+        <div id="box">
+            <div class="bigBox" style="margin-left: 2%;">
+                <div id="ho1" class="smallBox"></div>
+                <h4>进击的巨人系列</h4>
+                <span class="boxspan">9个影片</span>
+            </div>
+            <div class="bigBox">
+                <div id="ho2" class="smallBox"></div>
+                <h4 style="width: 65%;">名侦探柯南剧场版全集</h4>
+                <span class="boxspan" style="left: 37%;">23个影片</span>
+            </div>
+            <div class="bigBox">
+                <div id="ho3" class="smallBox"></div>
+                <h4 style="width: 39%;">哈利波特系列</h4>
+                <span class="boxspan" style="left: 40%;">8个影片</span>
+            </div>
+            <div class="bigBox">
+                <div id="ho4" class="smallBox"></div>
+                <h4 style="width:38%">僵尸先生系列</h4>
+                <span class="boxspan">5个影片</span>
+            </div>
+            <div class="bigBox" style="margin-left: 2%;">
+                <div id="ho5" class="smallBox"></div>
+                <h4 style="width: 32%;">古惑仔系列</h4>
+                <span class="boxspan">9个影片</span>
+            </div>
+            <div class="bigBox">
+                <div id="ho6" class="smallBox"></div>
+                <h4 style="width: 32%;">老友记系列</h4>
+                <span class="boxspan" style="left: 37%;">10个影片</span>
+            </div>
+            <div class="bigBox">
+                <div id="ho7" class="smallBox"></div>
+                <h4 style="width: 38%;">电锯惊魂系列</h4>
+                <span class="boxspan">7个影片</span>
+            </div>
+            <div class="bigBox">
+                <div id="ho8" class="smallBox"></div>
+                <h4 style="width: 38%;">星球大战系列</h4>
+                <span class="boxspan">11个影片</span>
+            </div>
+        </div>
+    </div>
+    <div id="dbTop">
+        <h2>⭐ 豆瓣专题</h2>
+        <hr>
+        <div id="box" style="height: 100%;">
+            <div class="bigBox" style="margin-left: 2%;width: 33%;">
+                <div id="db" class="smallBox"></div>
+                <h4 style="margin-left: 34%;width: 29%;">豆瓣Top250</h4>
+                <span class="boxspan">74个影片</span>
+            </div>
+    </div>
+
+    <div id="foot">
+        1930634 朱腾飞 19软件6班<br>
+        网站仅用于提交期末作业
+    </div>
+    
+    <div id="popup"> <!-- 关于弹窗 -->
+        <div id="clo" title="关闭"><h1>×</h1></div>
+        <h2>关于网页</h2><br><br>
+        <span>网站做的很简陋且可能会有各种瑕疵，代码也很多重复的，没有高效利用</span>
+        <del>说白了就是太菜最后写出了💩一样的代码但是不知道为什么就是可以运行</del><br>
+        <span>网站里面有些title纯属个人主观评论，不代表官方</span><br>
+        <span>网站某些元素在我做完后才发现弄错了，<del>死马当活马医</del>但是凭借我的机智
+        补救回来的界面还算可以接受<del>(能看)</del></span><br>
+        <span>右击菜单的动画是通过改变宽度实现的，动画效果虽然不像人间的东西，但也算能看吧</span><br>
+        <span>网站除了导航指向的页面，其他链接基本都是外链。如新番时间表中的链接。</span><br>
+        <span><strong style="color: red;">网页中含有emoji表情符号，
+            win7或以下可能火狐打开效果会好点，win10随意(一般情况建议chrome)</strong></span><br>
+        <span>大概就这些要说的，补充说明会在console中打印，点击右上角×号可以关闭该弹窗</span>
+    </div>
+
+    <ul id="menu"> <!-- 右击菜单 -->
+        <li>刷新界面</li>
+        <li>回主页</li>
+        <li>关闭窗口</li>
+        <li>回顶部</li>
+    </ul>
+
+    <span id="touchTime">时间区域</span>
+    <div id="face" ondblclick="location.href='#'" title="双击返回顶部">  <!-- 右下角小表情 -->
+        <div class="eye">
+            <div class="eyes"></div>
+            <div class="eyes"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+
+    <div id="login"> <!-- 用户登录 -->
+        <div id="cloo">×</div>
+        <div id="tit"><h2>用户登录</h2></div>
+        <form id="fr">
+            <div class="frinput">
+                <img src="./images/u_name.png">
+                <input type="text" placeholder="登录账号" id="usname">
+            </div>
+            <div class="frinput">
+                <img src="./images/u_pwd.png">
+                <input type="password" placeholder="登录密码" id="uspwd">
+            </div>
+            <div class="frinput" id="su">
+                登录
+            </div>
+        </form>
+    </div>
+<script src="js/index.js"></script>
+</body>
+</html>

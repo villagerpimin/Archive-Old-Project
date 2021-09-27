@@ -1,0 +1,499 @@
+#hotAnime{
+    width: 90%;  /* 1300px,85% */
+    height: 380px; /* 400px */
+    margin: auto;
+    margin-top: 1%;
+}
+#banner{
+    width: 38%;  /* 470px */
+    height: 330px; /* 370px */
+    background-image: url("../images/banner/狼与香辛料.jpg");
+    background-size: 100% 100%;
+    background-position: 35% 0;
+    transition: all 0.8s linear;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: antiquewhite;
+    float: left;
+    margin-left: 3%;
+}
+#previous{  /* 轮播上一张 */
+    width: 30px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    line-height: 60px;
+    text-align: center;
+    top: 40%;
+    opacity: 0;
+    float: left;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+
+#next{ /* 轮播下一张 */
+    width: 30px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    line-height: 60px;
+    text-align: center;
+    top: 40%;
+    opacity: 0;
+    float: right;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+#subscript{ /* 显示当前角标 */
+    position: relative;
+    top: 90%;
+    left: 10%;
+    width: 35%;
+    float: right;
+    height: 30px;
+    list-style: none;
+}
+#subscript span{
+    float: left;
+    position: relative;
+    top: 4px;
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#tips{
+    position: relative;
+    top: 90%;
+    width: 60%;
+    color: beige;
+}
+
+/* 热播 */
+#dm{
+    width: 50%;
+    height: 340px; /* 380px */
+    margin-right: 5%;
+    float: right;
+}
+.demo{
+    height: 130px; /* 140px */
+    width: 30%;
+    background-color: #888;
+    float: left;
+    margin-top: 2%; /* 3% */
+    margin-left: 3%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    transition:opacity 0.8s;
+}
+.hotspan{
+    color: white;
+    position: relative;
+    top: 80%;
+    left: 1%;
+    right: 1%;
+}
+#into{
+    margin-left: -30%;
+    opacity: 0;
+}
+#into:hover{
+    opacity: 0.7;
+}
+.intoTop{
+    color: white;
+}
+#hot1{
+    background-image: url("../images/hot/h1.jpg");
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    background-position: 35% 0;
+}
+#hot2{
+    background-image: url("../images/hot/h2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#hot3{
+    background-image: url("../images/hot/h3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#hot4{
+    background-image: url("../images/hot/h4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#hot5{
+    background-image: url("../images/hot/h5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#hot6{
+    background-image: url("../images/hot/h6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 公告栏 */
+#post{
+    width: 40%;
+    height: 21px;  /* 60px */
+    margin: auto;
+    /* background-color: #888; */
+}
+#post span{
+    text-align: center;
+    line-height: 21px;  /* 60px */
+    padding-left: 28%;
+    float: left;
+}
+#detail{
+    width: 30%;
+    height: 21px;
+    overflow: hidden;
+    list-style: none;
+    transition: 0.8s linear;
+    float: left;
+}
+
+/* 追番时间表 */
+#seekFanju{
+    position: absolute;
+    clear: both;
+    width: 85%;
+    height: 520px;
+    left: 8%;
+}
+#seekFanju h1{
+    line-height: 100px;
+}
+
+/* 时间 */
+#rili{
+    width: 55%; /* 630px */
+    height: 50px;
+    /* margin: auto; */
+    float: left;
+    border-bottom: 1px solid #888;
+}
+#rili li{
+    list-style: none;
+    float: left;
+    width: 7.8%; /* 50px */
+    height: 40px;
+    margin-right: 40px;
+    transition: border 0.2s linear;
+}
+#rili li:hover{
+    border-bottom: 1px solid skyblue;
+    transition: border 0.2s linear;
+    cursor: pointer;
+}
+#ranking{ /* 排行榜 */
+    width: 35%;
+    height: 450px;
+    float: right;
+    margin-top: -5%;
+}
+#ls{
+    list-style: none;
+    margin-top: 5%;
+    width: 50%;
+    height: 300px;
+}
+#ls li{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: rgb(131, 131, 156);
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    color: white;
+    float: left;
+}
+#ls span{
+    float: left;
+    margin-left: 15px;
+}
+
+
+#co1{ /* 内容1 */
+    display: block;
+    overflow-y: scroll;
+    width: 55%;  /* 630px */
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 1%;
+    float: left;
+}
+.item{
+    list-style: none;
+    width: 35%; /* 220px */
+    height: 350px; /* 300px */
+    background-color: antiquewhite;
+    margin-right: 50px;
+    float: left;
+    margin-right: 14%;
+    color: rgb(117, 117, 117);
+    background-size: 136% 133%;
+    transition: color 1s;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#monday span{
+    float: right;
+    position: relative;
+    top: 90%;
+    color: #888;
+}
+#monday span:hover{
+    color: skyblue;
+}
+#co2{ /* 内容2 */
+    display: none;
+    overflow-y: scroll;
+    width: 55%;  /* 630px */
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 1%;
+    float: left;
+}
+#tuesday span{
+    float: right;
+    position: relative;
+    top: 90%;
+    color: #888;
+}
+#tuesday span:hover{
+    color: skyblue;
+}
+#co3{ /* 内容3 */
+    display: none;
+    overflow-y: scroll;
+    width: 55%;  /* 630px */
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 1%;
+    float: left;
+}
+#wednesday span{
+    float: right;
+    position: relative;
+    top: 90%;
+    color: #888;
+}
+#wednesday span:hover{
+    color: skyblue;
+}
+#co4{ /* 内容4 */
+    display: none;
+    overflow-y: scroll;
+    width: 55%;  /* 630px */
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 1%;
+    float: left;
+}
+#thursday span{
+    float: right;
+    position: relative;
+    top: 85%;
+    color: #888;
+}
+#thursday span:hover{
+    color: skyblue;
+}
+#co5{ /* 内容5 */
+    display: none;
+    overflow-y: scroll;
+    width: 55%;  /* 630px */
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 1%;
+    float: left;
+}
+#firday span{
+    float: right;
+    position: relative;
+    top: 85%;
+    color: #888;
+}
+#firday span:hover{
+    color: skyblue;
+}
+#co6{ /* 内容6 */
+    display: none;
+    overflow-y: scroll;
+    width: 55%;  /* 630px */
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 1%;
+    float: left;
+}
+#saturday span{
+    float: right;
+    position: relative;
+    top: 85%;
+    color: #888;
+}
+#saturday span:hover{
+    color: skyblue;
+}
+#co7{ /* 内容7 */
+    display: none;
+    overflow-y: scroll;
+    width: 55%;  /* 630px */
+    height: 280px;
+    margin-top: 30px;
+    margin-left: 1%;
+    float: left;
+}
+#sunday span{
+    float: right;
+    position: relative;
+    top: 85%;
+    color: #888;
+}
+#sunday span:hover{
+    color: skyblue;
+}
+
+/* 热播专题 */
+#hottopics{
+    width: 90%; /* 85% */
+    height: 730px;  /* 760px */
+    /* background-color: antiquewhite; */
+    margin-top: 580px;
+    margin-left: 8%;
+}
+#hottopics h2{
+    line-height: 66px;
+}
+#box{
+    width: 100%;
+    height: 650px;
+    margin-top: 30px;
+    /* background-color: aqua; */
+}
+.bigBox{ /* 装图和文字 */
+    width: 22.5%;
+    height: 280px;  /* 300px */
+    margin-right: 2%;
+    margin-bottom: 2%;
+    float: left;
+    /* background-color: aquamarine; */
+}
+.smallBox{  /* 用于放图 */
+    width: 100%;
+    height: 200px;
+    margin-right: 2%;
+    float: left;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+#box h4{
+    font-weight: 500;
+    line-height: 40px;
+    padding-bottom: 20px;
+    width: 45%;
+    margin: auto;
+    border-bottom: 1px solid #888;
+}
+.boxspan{  /* 文字 */
+    width: 10%;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    left: 40%;
+    top: -4%;
+    color: #555;
+}
+#ho1{
+    background-image: url("../images/hottopics/巨人合集.gif");
+    background-size: 100% 100%;
+}
+#ho2{
+    background-image: url("../images/hottopics/柯南.gif");
+    background-size: 100% 100%;
+}
+#ho3{
+    background-image: url("../images/hottopics/哈利波特.gif");
+    background-size: 100% 100%;
+}
+#ho4{
+    background-image: url("../images/hottopics/僵尸先生.gif");
+    background-size: 100% 100%;
+}
+#ho5{
+    background-image: url("../images/hottopics/古惑仔.jpg");
+    background-size: 100% 100%;
+}
+#ho6{
+    background-image: url("../images/hottopics/老友记.png");
+    background-size: 100% 100%;
+}
+#ho7{
+    background-image: url("../images/hottopics/电锯惊魂.gif");
+    background-size: 100% 100%;
+}
+#ho8{
+    background-image: url("../images/hottopics/星球大战.gif");
+    background-size: 100% 100%;
+}
+
+/* 豆瓣TOP */
+#dbTop{
+    width: 85%;
+    height: 300px;
+    /* background-color: #7AFFAF; */
+    margin: auto;
+}
+#dbTop h2{
+    line-height: 66px;
+}
+#db{
+    background-image: url("../images/hottopics/豆瓣.jpg");
+    background-size: 100% 100%;
+}
+
+
+/* 关于弹窗 */
+#popup{
+    width: 500px;
+    height: 500px;
+    background-color: antiquewhite;
+    position: absolute;
+    left: 35%;
+    top: -90%;  /* -90%隐藏 */
+    transition: top 0.4s linear;
+    opacity: 0.93;
+    background-image: linear-gradient(to bottom right, #7A88FF, #7AFFAF);
+    /* text-align: center; */
+    color: antiquewhite;
+    border-radius: 15px;
+}
+#popup span{
+    line-height: 30px;
+}
+#popup h2{
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    line-height: 80px;
+}
+#clo{ /* 关闭按钮 */
+    width: 40px;
+    height: 40px;
+    float: right;
+    color: #888;
+    text-align: center;
+    cursor: pointer;
+}

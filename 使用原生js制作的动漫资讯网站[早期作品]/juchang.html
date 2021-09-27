@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>剧场动画</title>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+    <img id="skin" src="./images/skin1.png" title="切换夜间">
+    <img id="user" src="./images/user.png" title="用户登录">
+    <div id="cover">
+        <div id="search">
+            <form id="sub">
+                <input type="text" name="q" id="scan">
+                <span id="send"></span>
+            </form>
+        </div>
+        <div id="title">动漫站</div>
+    </div>
+    <div id="nav">
+        <ul id="list">
+            <li>主页</li>
+            <li>经典老番</li>
+            <li>剧场动画</li>
+            <li>剧集</li>
+            <li>电影</li>
+        </ul>
+    </div>
+    <div id="select">
+        <ul id="sled"> <!-- 用于显示已选择的条件 -->
+            <span class="sled">已选择：</span>
+            <li>剧场动画</li>  <!-- 留用记录分类 -->
+            <li></li> <!-- 留用记录类型 -->
+            <li></li> <!-- 留用记录季度 -->
+            <li></li> <!-- 留用记录年代 -->
+        </ul>
+        <ul id="assort">
+            <span class="sled">分类：</span>
+            <li>全部</li><li>TV版</li><li>剧场版</li><li>特别版</li>
+        </ul>
+
+        <ul id="typesOf">  <!-- 番剧类型 -->
+            <span class="sled">类型：</span>  <!-- 下标1 -->
+            <li>全部</li><li>热血</li><li>冒险</li><li>搞笑</li>
+            <li>运动</li><li>竞技</li><li>穿越</li><li>校园</li>
+            <li>泡面</li><li>美食</li><li>音乐</li><li>推理</li>
+            <li>科幻</li><li>耽美</li><li>小说改</li><li>后宫</li>
+            <li>励志</li><li>恋爱</li><li>爱情</li><li>百合</li>
+            <li>战斗</li><li>机战</li><li>魔法</li><li>治愈</li>
+            <li>社团</li><li>萌系</li><li>轻改</li><li>催泪</li>
+            <li>日常</li><li>乙女</li><li>其他</li>  <!-- 下标长度32 -->
+        </ul>
+
+        <ul id="season"> <!-- 季度 -->
+            <span class="sled">季度：</span>
+            <li>全部</li>
+        </ul>
+
+        <ul id="years">
+            <span class="sled">年代：</span>
+            <li>全部</li><li>2020</li><li>2019</li><li>2018</li><li>2017</li>
+            <li>2016</li><li>2015</li><li>2014</li><li>2013</li><li>2012</li>
+        </ul>
+    </div>
+
+    <div id="content"> <!-- 内容 -->
+        <div class="big">
+            <div class="boximg"></div>
+            <p>若能与你共乘海浪之上</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>路人女主的养成方法</p>
+            <span>完结篇</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>知晓天空之蓝的人啊</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>鬼灭之宴</p>
+            <span>特别篇</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>海兽之子</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>你好世界</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>七大罪：天空的囚人</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>我想吃掉你的胰脏</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>朝花夕誓</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>你的名字</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>声之形</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>在这世界的角落</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>烟花</p>
+            <span>BD720P</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p style="font-size: 14px;">迪迦奥特曼：新生代之巅</p>
+            <span>国语版</span>
+        </div>
+        <div class="big">
+            <div class="boximg"></div>
+            <p>时光沙漏</p>
+            <span>BD720P</span>
+        </div>
+
+        <ul id="page">
+            <li>首页</li>
+            <li style="cursor: no-drop;">上一页</li>
+            <li style="width: 40px;">1</li>
+            <li style="width: 40px;cursor: no-drop;">2</li>
+            <li style="cursor: no-drop;">下一页</li>
+            <li style="cursor: no-drop;">尾页</li>
+        </ul>
+    </div>
+
+    <div id="foot">
+        1930634 朱腾飞 19软件6班<br>
+        网站仅用于提交期末作业
+    </div>
+    <ul id="menu"> <!-- 右击菜单 -->
+        <li>刷新页面</li>
+        <li>回主页</li>
+        <li>关闭窗口</li>
+        <li>回顶部</li>
+    </ul>
+    <span id="touchTime">时间区域</span>
+    <div id="face" ondblclick="location.href='#'" title="双击返回顶部">  <!-- 右下角小表情 -->
+        <div class="eye">
+            <div class="eyes"></div>
+            <div class="eyes"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+    <div id="login"> <!-- 用户登录 -->
+        <div id="cloo">×</div>
+        <div id="tit"><h2>用户登录</h2></div>
+        <form id="fr">
+            <div class="frinput">
+                <img src="./images/u_name.png">
+                <input type="text" placeholder="登录账号" id="usname">
+            </div>
+            <div class="frinput">
+                <img src="./images/u_pwd.png">
+                <input type="password" placeholder="登录密码" id="uspwd">
+            </div>
+            <div class="frinput" id="su">
+                登录
+            </div>
+        </form>
+    </div>
+<script src="js/index.js"></script>
+<script src="js/juchang.js"></script>
+<script src="js/laofan.js"></script>  <!-- 选择标签的js -->
+</body>
+</html>

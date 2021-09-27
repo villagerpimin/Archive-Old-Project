@@ -1,0 +1,447 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{ /* 网页换肤用 */
+    transition: 0.5s;
+}
+
+#skin{  /* 换肤按钮(切换夜间模式) */
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    float: right;
+    top: 5%;
+    left: 90%;
+}
+#skin:hover{
+    transform: rotate(90deg);
+    transition: 0.8s linear;
+    cursor: pointer;
+}
+
+/* 用户登录 */
+#user{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    float: right;
+    top: 5%;
+    left: 87%;
+}
+#user:hover{
+    cursor: pointer;
+}
+#login{ /* 登录界面 */
+    width: 0px;  /* 400 */
+    height: 0px;
+    border-radius: 30px;
+    background-color: white;
+    position: fixed;
+    left: 40%;
+    top: 25%;
+    opacity: 0.9;
+    transition: 0.2s linear;
+    overflow: hidden;
+}
+#tit{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.74);
+}
+#tit h2{
+    font-weight: 500;
+    color: #555;
+    line-height: 66px;
+}
+#cloo{
+    float: right;
+    margin-right: 10%;
+    margin-top: 1%;
+    font-size: 24px;
+    cursor: pointer;
+}
+#fr{
+    margin-top: 10%;
+    width: 60%;
+    height: 250px;
+    position: relative;
+    top: 30px;
+    margin: auto;
+}
+#fr input{border-style: none;outline: none;}
+.frinput{
+    border: 1px solid rgb(64, 126, 197);
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+#fr img{
+    width: 25px;
+    height: 23px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 3px;
+    margin-top: 4px;
+}
+#su{
+    background-color: rgba(125, 125, 218, 0.87);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#cover{
+    height: 300px;
+    width: 100%;
+    background-image: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+    background-position: 0px -80px;
+}
+#search{
+    position: relative;
+    top: 70%;
+    right: 5%;
+    float: right;
+    width: 250px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.5;
+    transition: all 1.3s;
+}
+#search form{
+    width: 100%;
+    height: 100%;
+}
+#search input{
+    height: 100%;
+    width: 190px;
+    float: left;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    position: relative;
+    left: 10px;
+}
+#search span{
+    float: right;
+    height: 60%;
+    width: 25px;
+    position: relative;
+    top: 10px;
+    right: 15px;
+    background-image: url("../images/search.png");
+    background-size: 100% 100%;
+}
+#title{
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 60%;
+    left: 5%;
+}
+
+
+#nav{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.15);
+}
+#nav ul{
+    width: 600px;
+    height: 60px;
+    position: relative;
+    margin: auto;
+}
+#nav li{
+    list-style: none;
+    float: left;
+    padding-left: 45px;
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s;
+}
+#nav li:hover{
+    color: orange;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* 右击菜单 */
+#menu{
+    position: absolute;
+    width: 0px;
+    height: 160px;
+    background-color:white;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+#menu li{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.404);
+    text-align: center;
+    line-height: 40px;
+    list-style: none;
+}
+#menu li:hover{
+    cursor: pointer;
+}
+
+/* 页脚 */
+#foot{
+    clear: both;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/* 子页的选择框容器 */
+#select{
+    width: 1100px;
+    height: 270px;
+    margin: auto;
+    /* background-color: antiquewhite; */
+    margin-top: 15px;
+    cursor: default;
+}
+
+
+/* 已选择的选项 */
+#sled{
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.sled{
+    float: left;
+    color: #888;
+    /* height: 30px; */
+}
+#sled li{
+    float: left;
+    list-style: none;
+    height: 30px;
+    color: orange;
+    margin-right: 20px;
+    /* background-color: aqua; */
+}
+
+/* 分类 */
+#assort{
+    width: 100%;
+    clear: both;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#assort li{
+    height: 35px;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    transition: color 0.6s;
+}
+#assort li:hover{
+    color: #888;
+    transition: color 0.6s;
+    cursor: pointer;
+}
+
+/* 类型 */
+#typesOf{
+    width: 100%;
+    clear: both;
+    font-size: 18px;
+    margin-top: 15px;
+}
+#typesOf li{
+    height: 35px;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    transition: color 0.6s;
+}
+#typesOf li:hover{
+    color: #888;
+    transition: color 0.6s;
+    cursor: pointer;
+}
+
+/* 季度 */
+#season{
+    width: 100%;
+    clear: both;
+    font-size: 18px;
+    margin-top: 15px;
+}
+#season li{
+    height: 35px;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    transition: color 0.6s;
+}
+#season li:hover{
+    color: #888;
+    transition: color 0.6s;
+    cursor: pointer;
+}
+
+/* 年份 */
+#years{
+    width: 100%;
+    clear: both;
+    font-size: 18px;
+    margin-top: 15px;
+}
+#years li{
+    height: 35px;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    transition: color 0.6s;
+}
+#years li:hover{
+    color: #888;
+    transition: color 0.6s;
+    cursor: pointer;
+}
+
+
+/* 网页右下角的小表情 */
+#face{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color:blanchedalmond;
+    position: fixed;  /* 使小表情始终浮动在右下角 */
+    float: right;
+    top: 70%;
+    right: 3%;
+    opacity: 0.95;
+    overflow: hidden;
+}
+.eye{  /* 眼睛 */
+    width: 75px;
+    height: 25px;
+    display: flex;
+    justify-content:space-between;  /* 使元素位于空白容器内 */
+    margin: 25px auto;
+} 
+.eyes{ /* 眼珠子 */
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+}  
+.mouth{ /* 嘴 */
+    width: 58.75px;
+    height: 25px;
+    background: #fad18e;
+    border-radius:0  0 100px 100px;
+    margin: 27.5px auto;
+    transition: 0.5s;
+}
+.eye .eyes::before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #323231;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 35%;
+    left: 13.75px;
+    border-radius: 50%;
+}
+
+/* 点击时出现的当前时间 */
+#touchTime{
+    width: 180px;
+    height: 70px;
+    background-color: antiquewhite;
+    float: right;
+    position: fixed;
+    top: 60%;
+    right: 9%;
+    border-radius:5px 0 5px 0;  /* 将左上角和右下角变圆 */
+    opacity: 0;
+    transition: 1s;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+/* 子页的内容区 */
+#content{
+    width: 1100px;
+    height: 1300px;
+    /* background-color: aqua; */
+    margin: auto;
+}
+#content p{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.big{
+    width: 200px;
+    height: 350px;
+    background-color: rgba(216, 214, 214, 0.137);
+    transition: 0.2s linear;
+    float: left;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.big:hover{
+    transition: 0.2S linear;
+    box-shadow: 0px 3px 3px rgba(87, 86, 86, 0.15);
+}
+.boximg{
+    width: 100%;
+    height: 265px;
+    background-size: 100% 100%;
+    /* background-color: aqua; */
+    cursor: pointer;
+}
+#content span{
+    margin-left: 30px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+}
+#page{  /* 页数 */
+    clear: both;
+    width: 480px;
+    height: 80px;
+    /* background-color: #fad18e; */
+    margin: auto;
+    list-style: none;
+}
+#page li{
+    width: 60px;
+    /* height: 100%; */
+    line-height: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+    transition: all 0.8s;
+    text-align: center;
+    border: 1px rgba(136, 136, 136, 0.205) solid;
+    float: left;
+}
+#page li:hover{
+    /* background-color: bisque; */
+    transition: all 0.8s;
+    cursor: pointer;
+}
