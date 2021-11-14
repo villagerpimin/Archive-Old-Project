@@ -6,6 +6,10 @@
 
 #### 目前有如下项目
 
+* 使用uniapp写的微信小程序
+
+> 拥有前后端管理系统，用户登录需要开发者申请appid等信息
+
 * 使用ASP.NET重写的图片素材网站
 
 > 网页模板以及内容均来自[pixabay.com](https://pixabay.com/zh/)
