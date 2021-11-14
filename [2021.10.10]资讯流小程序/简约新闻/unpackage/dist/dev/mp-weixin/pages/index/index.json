@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "简约新闻",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "sui-search": "/uni_modules/sui-search/components/sui-search/sui-search",
+    "banner": "/components/banner/banner",
+    "news-tag": "/components/news-tag/news-tag",
+    "news-column": "/components/news-column/news-column"
+  }
+}

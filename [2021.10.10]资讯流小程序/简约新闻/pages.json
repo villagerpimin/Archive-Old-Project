@@ -1,0 +1,97 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "简约新闻",
+				"enablePullDownRefresh":true
+			}
+		}
+	    ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/readnews/readnews",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "阅读页",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search-result/search-result",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索结果",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/user-edit/user-edit",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑资料",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/user-edit/changeText",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "更新资料",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/view-history/view-history",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "历史记录",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/send-news/send-news",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "投递新闻",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color": "#bdbdbd",
+		    "selectedColor": "#005500",
+		    "borderStyle": "black",
+		    "backgroundColor": "#ffffff",
+		    "list": [{
+		        "pagePath": "pages/index/index",
+		        "iconPath": "static/images/tabbar/home.png",
+		        "selectedIconPath": "static/images/tabbar/home.png",
+		        "text": "首页"
+		    }, {
+		        "pagePath": "pages/my/my",
+		        "iconPath": "static/images/tabbar/my.png",
+		        "selectedIconPath": "static/images/tabbar/my.png",
+		        "text": "我的"
+		    }]
+	}
+}

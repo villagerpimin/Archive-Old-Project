@@ -1,0 +1,1 @@
+<view class="frame"><view class="module"><block wx:for="{{funcMenu}}" wx:for-item="item" wx:for-index="__i0__"><view class="box"><view data-event-opts="{{[['tap',[['selectMod',['$0'],[[['funcMenu','',__i0__]]]]]]]}}" bindtap="__e">{{''+item+''}}</view></view></block></view></view>

@@ -1,0 +1,1 @@
+<view class="frame"><view class="change"><text>{{changeType+":\n"}}</text><input type="text" maxlength="{{maxlength}}" data-event-opts="{{[['blur',[['getText',['$event']]]]]}}" value="{{showText}}" bindblur="__e"/><view class="tips">注意：不可输入表情符号或者特殊字符</view></view><view data-event-opts="{{[['tap',[['saveChange']]]]}}" class="save" bindtap="__e">保存更改</view></view>

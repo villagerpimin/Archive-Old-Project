@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "投递新闻",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-group": "/uni_modules/uni-group/components/uni-group/uni-group"
+  }
+}

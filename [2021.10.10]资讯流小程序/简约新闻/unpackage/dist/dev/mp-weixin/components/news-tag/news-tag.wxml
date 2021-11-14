@@ -1,0 +1,1 @@
+<view class="tags"><scroll-view scroll-x="true" show-scrollbar="true" enable-flex="true"><block wx:for="{{tags}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['touchTag',['$0',index],[[['tags','',index]]]]]]]}}" class="{{['item',(index===poi)?'item_on':'']}}" bindtap="__e">{{''+item+''}}</view></block></scroll-view></view>

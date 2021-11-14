@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "阅读页",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "news-comment": "/components/news-comment/news-comment"
+  }
+}
