@@ -1,8 +1,8 @@
 <?php
 //appid
-$appid = "wxc5abcbceec621535";
+$appid = "none";
 //secret
-$secret = "1f968112627656fdc4e8e8fca948f48c";
+$secret = "none";
 //前端返回的code
 $jscode = $_POST["jscode"];
 //用户头像
